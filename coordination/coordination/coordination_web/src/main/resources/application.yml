@@ -1,0 +1,22 @@
+server:
+  port: 8088
+  servlet:
+    context-path: /coordination
+
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/
+    Suffix: .html
+    mode: LEGACYHTML5
+    encoding: UTF-8
+    servlet:
+      content-type: text/html
+    cache: false
+
+  mvc:
+    static-path-pattern: /static/**
+    favicon:
+      enabled: false
+    view:
+      prefix: /templates/
+      suffix: .html

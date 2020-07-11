@@ -1,0 +1,16 @@
+server:
+  port: 8989
+
+spring:
+  datasource:
+    username: root
+    password: 123456
+
+#    url: jdbc:mysql://localhost:3306/Coordination?useSSL=false&serverTimezone=Hongkong&useUnicode=true&characterEncoding=utf-8
+    url: jdbc:mysql://localhost:3306/Coordination?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+mybatis:
+  mapper-locations: com.cd.coordination.dao/*Dao.xml
+  type-aliases-package: com.cd.coordination.entity
